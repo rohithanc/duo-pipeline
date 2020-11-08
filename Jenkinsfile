@@ -1,9 +1,7 @@
 pipeline {
   agent any
-  environment {
-  }
   stages {
-      stage ('build images){
+      stage ('build images'){
       steps {
           sh 'sudo docker build -t rohithan9615/flask-app:1.0 .'
         }
