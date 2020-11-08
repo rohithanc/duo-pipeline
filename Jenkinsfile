@@ -12,7 +12,7 @@ pipeline {
           sh 'sudo docker push rohithan9615/flask-app:1.0'
       }
     }
-      stage{'deploy on other vm'){
+      stage('deploy on other vm'){
         steps{
           sh. 'chmod +x deploy.sh'
           sh. './deploy.sh'
