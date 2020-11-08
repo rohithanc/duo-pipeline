@@ -8,7 +8,7 @@ pipeline {
       }
       stage('login and push to dockerhub'){
         steps {
-          sh 'winpty sudo docker login'
+          sh 'sudo docker login'
           sh 'sudo docker push rohithan9615/flask-app:1.0'
       }
     }
