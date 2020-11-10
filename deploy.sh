@@ -2,7 +2,7 @@
 
 ls -la /var/lib/jenkins/.ssh/
 
-ssh -tt -i /var/lib/jenkins/.ssh/id_rsa rohithan9615@34.72.101.122 << EOF
+ssh -i /var/lib/jenkins/.ssh/id_rsa rohithan9615@34.72.101.122 << EOF
 if ! [ $(docker network ls | grep duo-task-network) ]; then
   sudo docker network create duo-task-network
 fi
